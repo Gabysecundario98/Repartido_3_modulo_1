@@ -1,5 +1,6 @@
 body {font-family: Arial, Helvetica, sans-serif;
-background: #F3F8DA;}
+background: #F3F8DA;
+;}
 .navegador{list-style: none;
             padding: 0%;
 background-color: #9fa1dd;
@@ -50,4 +51,35 @@ background-color: #9fa1dd;
     100% {margin-left: -300%;}
 
 
+}
+.slider: {
+    position:relative;
+    display: inline-block;
+    text-align: center;
+}
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Ramaraja', serif;;
+}
+.galeria { 
+    display: block;
+    flex-direction: row;
+
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightgreen, 0 6px 20px 0 black;
+}
+.galeria img {
+    width: 100%;
+    height: auto;
+}
+div.galeria :hover{
+    border: 1px solid green;
 }
