@@ -5,7 +5,7 @@ background: #edf8b4;
 
 .navegador{list-style: none;
             padding: 0%;
-background-color: #9fa1dd;
+            background-color: #9fa1dd;
                 width: 90%;
                 max-width: 1000px;
                 margin: auto;}
@@ -20,7 +20,7 @@ background-color: #9fa1dd;
     text-align: center;
     margin-left: 80px;
 }
-.navegador li a:hover{background: #F3F8DA;}
+.navegador li a:hover{background-image: linear-gradient(#9fa1dd,#edf8b4);}
 .encabezado img {
     margin: auto;
     display: block;
@@ -65,11 +65,6 @@ background-color: #9fa1dd;
 }
 
 
-.texto-encima{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
 .centrado{
         display: flex;
         align-items: flex-start;
@@ -77,11 +72,15 @@ background-color: #9fa1dd;
         top: 10%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-family: 'Ramaraja', serif;;
-        color: rgba(221, 203, 231, 0.987);
+        font-family: 'Ramaraja', serif;
         font-size: 15px;
-        background-color: #e39403 solid
-        ;
+      
+}
+.centrado h1 {
+    border: #a0bce9 3px solid;
+    display: block;
+    color: rgb(5, 32, 63); 
+    background-color: #9fa1dd                
 }
 
 
@@ -107,8 +106,11 @@ div.galeria :hover{
 
 h1 {color: #5f619c;}
 
-
-
+.contenedorbotones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .botones {
     display:flex ;
@@ -116,17 +118,23 @@ h1 {color: #5f619c;}
     position:relative;
     justify-content: space-around;
 }
+.unite:hover {
+    color: green;
+}
+.colabora:hover {
+    color: red;
+}
 .unite {
     padding: 15px;
     font-size: 16px;
     border: none;
     outline: 0px;
-    background: rgb(255, 0, 0);
+    background: red;
     color: rgb(255, 255, 255);
     border-radius: 3px;
     cursor: pointer;
     transition: all 300ms ease;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 .colabora {
     padding: 15px;
@@ -142,10 +150,24 @@ h1 {color: #5f619c;}
 }
 
 .modalidades {
+    display: grid;
+    text-align: center;
     width: 150px;
     height: auto;;
 }
-
+.modalidades img {
+    box-shadow: 0 4px 8px 0 #5f619c, 0 6px 20px 0 black;
+}
+.modalidades h1 {
+    text-align: center;
+}
+.modalidades p {
+                display: flex;
+                text-align: center;
+                font-family: 'Courier New', Courier, monospace;
+                background-color: #9fa1dd solid;
+                background: none;
+}
 .cards {
     margin-right: 100px;
     display: flex;
@@ -153,11 +175,12 @@ h1 {color: #5f619c;}
 }
 
 .presentacion {
+    background-image: linear-gradient(#9fa1dd, white);
     display: flex;
     background-color: #9fa1dd;
 }
 .presentacion h3 {
-    color: rgb(233, 226, 168);
+    color: rgb(5, 32, 63);
     align-self: flex-start;
     padding-top: 20px;
 margin-inline-start: 20px;}
@@ -173,11 +196,17 @@ margin-inline-start: 20px;}
     width: 300px;
     height: auto;
 }
-
+.equipo :hover {
+    background-image: linear-gradient(#a5a6d6, #edf8b4);
+    background-size: auto;
+}
 .equipo {
-    display: flex;
+    text-align: center;
+    display: inline-flex;
     justify-content: space-around;
 }
+
+.equipo p {font-family: 'Courier New', Courier, monospace;}
 
 .director img{ width: 300px; height: auto; 
     background-color: rgb(185,205,225); 
@@ -188,7 +217,7 @@ margin-inline-start: 20px;}
     margin-right: 30px;
     background-color: #a0bce9;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1400px;
     margin: auto;
     display: flex;
     margin: 0%;
